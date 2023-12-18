@@ -22,9 +22,7 @@ function Passcode() {
     if (index === 5 && value !== '') {
       const enteredCode = updatedPasscode.join('');
       if (isValidCode(enteredCode)) {
-        // Check if the passcode is '927110' and navigate to the home page
         if (enteredCode === '920117') {
-          // Retrieve selected organization from local storage or state
           const selectedOrganization = localStorage.getItem('selectedOrganization');
           navigate(`/organization?orgId=${selectedOrganization}`);
         } else {
