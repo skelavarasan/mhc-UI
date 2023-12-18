@@ -14,7 +14,7 @@ function PasswordLogin() {
           <Route path="/" element={<RegisterAndLogin />} />
           <Route path="/passcode" element={<Passcode />} />
           <Route path="/organization" element={<Organization />} />
-          <Route path="/onOrgDetailsClick" element={<OrgDetails />} />
+          <Route path="/onOrgDetailsClicky" element={<OrgDetails />} />
 
 
         </Routes>
