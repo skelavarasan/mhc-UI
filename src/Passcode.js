@@ -29,7 +29,6 @@ function Passcode() {
           alert('Invalid passcode. Please check the entered code.');
         }
       } else {
-        // Display an alert if the code is not a valid 6-digit numeric value
         alert('Please enter a valid 6-digit numeric passcode.');
       }
     }
