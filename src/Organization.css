@@ -1,0 +1,16 @@
+/* Organization.css */
+
+/* Set height of the organization-container to 100vh (100% of viewport height) */
+.organization-container {
+    display: flex;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  /* Set height of the organization-content to 100% of its parent (organization-container) */
+  .organization-content {
+    flex: 1;
+    overflow: auto; /* Add scroll if content overflows */
+    padding: 20px; /* Add padding as needed */
+    /* Add other styles as needed */
+  }
+  
