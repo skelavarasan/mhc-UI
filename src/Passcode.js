@@ -11,7 +11,6 @@ function Passcode() {
     updatedPasscode[index] = value;
     setPasscode(updatedPasscode);
 
-    // Move focus to the next input box
     if (index < 5 && value !== '') {
       const nextInput = document.getElementById(`passcode-${index + 1}`);
       if (nextInput) {
@@ -35,14 +34,12 @@ function Passcode() {
   };
 
   useEffect(() => {
-    // Focus on the first input box when the component mounts
     const firstInput = document.getElementById('passcode-0');
     if (firstInput) {
       firstInput.focus();
     }
   }, []);
 
-  // Function to check if the code is a valid 6-digit numeric value
   const isValidCode = (code) => /^\d{6}$/.test(code);
 
   return (

@@ -15,7 +15,6 @@ export const sidebarData = [
    {
      title: "Organization Details",
      icon: <AdminIcon/>,
-     link: "/onOrgDetailsClick",
    },
 
    {
