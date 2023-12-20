@@ -1,106 +1,62 @@
-.appx{
-    width: 100vw;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-body{
-    margin: 0;
-    padding: 0;
+
+.container {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
 }
 
 .sidebar {
-    height: 100%;
-    width: 250px;
-    background: linear-gradient(to bottom, rgb(19, 67, 99),  rgb(2, 11, 18));
-    /* Add other styles as needed */
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  width: 100px; 
+  transition: all 0.5s;
 }
 
-
-.sidebarlist{
-    height: auto;
-    padding: 0;
-    width: 100%;
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
 }
 
-.sidebarlist .row{
-    width: 100%;
-    height: 60px;
-    list-style-type: none;
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+.logo {
+  font-size: 30px;
 }
 
-.sidebarlist .row:hover{
-    cursor: pointer;
-    background-color: #293846;
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
 }
 
-.sidebarlist .row #active{
-    background-color: #293846;
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
 }
 
-.row #icon{
-    flex: 30%;
-    display: grid;
-    place-items: center;
+.link:hover {
+  background: lightskyblue;
+  color: #000;
+  transition: all 0.5s;
 }
 
-.row #title{
-    flex: 70%;
+.active {
+  background: lightskyblue;
+  color: #000;
 }
 
-
-.appx {
-    width: 100vw;
-    height: 100vh;
-    position: relative; 
+.icon,
+.link_text {
+  font-size: 20px;
 }
-
-.vikx {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-
-.signout-button {
-    background-color: #FF5733; 
-    color: #FFF; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.signout-button:hover {
-    background-color: #E94F26; 
-}
-.awesome-welcome {
-    text-align: center; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-
-.button-link {
-    display: flex;
-    align-items: center;
-    background: none;
-    border: none;
-    color: white;
-    padding: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    width: 100%; 
-  }
-  
-  .button-link:hover {
-    background-color: #4a5568; /* Adjust the hover background color */
-  }

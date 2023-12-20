@@ -2,15 +2,30 @@
 
 /* Set height of the organization-container to 100vh (100% of viewport height) */
 .organization-container {
-    display: flex;
-    height: 100vh; /* Adjust as needed */
+  display: flex;
+  height: 100vh; /* Adjust as needed */
+}
+
+/* Set height of the organization-content to 100% of its parent (organization-container) */
+.organization-content {
+  flex: 1;
+  overflow: auto; /* Add scroll if content overflows */
+  padding: 20px; /* Add padding as needed */
+  /* Add other styles as needed */
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+    /* Add other styles for smaller screens */
   }
-  
-  /* Set height of the organization-content to 100% of its parent (organization-container) */
-  .organization-content {
-    flex: 1;
-    overflow: auto; /* Add scroll if content overflows */
-    padding: 20px; /* Add padding as needed */
-    /* Add other styles as needed */
-  }
-  
+}
+
+
+
+.input-box-container {
+  margin-bottom: 15px;
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  padding: 10px;
+}
+
