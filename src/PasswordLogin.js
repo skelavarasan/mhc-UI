@@ -4,6 +4,7 @@ import RegisterAndLogin from "./RegisterAndLogin";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sidebar from "./sidebar";
 import Home from "./Home";
+import AccessController from "./AccessController";
 
 
 function PasswordLogin() {
@@ -16,6 +17,8 @@ function PasswordLogin() {
           <Route path="/passcode" element={<Passcode />} />
           <Route path="/organization" element={<Organization />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/access-control" element={<AccessController />} />
+
         </Routes>
       </BrowserRouter>
     );

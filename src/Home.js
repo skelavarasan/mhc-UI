@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Sidebar from './sidebar';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Home() {
   const [organizationInfo, setOrganizationInfo] = useState(null);
@@ -40,14 +41,13 @@ function Home() {
 
   return (
     <div className="organization-container bg-gray-100 min-h-screen flex">
-      <Sidebar />
+      <Sidebar navigateToOrganization={navigateToOrganization} />
       <div className="organization-content p-8 flex-1">
         {organizationInfo ? (
           <div className="max-w-2xl mx-auto">
             <h1 className="text-3xl font-bold mb-4" onClick={navigateToOrganization}>
               {`Welcome to ${organizationInfo.organizationdetails[0].name}!`}
             </h1>
-            {/* Render other organization details here */}
           </div>
         ) : (
           <p>Loading organization information...</p>

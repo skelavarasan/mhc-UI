@@ -1,0 +1,17 @@
+.home-container {
+    /* Any existing styles for the home-container */
+  
+    /* Add the following styles to ensure it is displayed correctly in a row */
+    display: flex;
+    flex-direction: row; 
+    /* Keep the default vertical direction for home content */
+  }
+  
+  .org {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin-right: 220px;
+    margin-bottom: 300px;
+  }

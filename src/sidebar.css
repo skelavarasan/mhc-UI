@@ -1,11 +1,11 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
 .container {
-  display: flex;
+  display:flex;
 }
 
 main {
@@ -17,7 +17,7 @@ main {
   background: #000;
   color: #fff;
   height: 100vh;
-  width: 100px; 
+  width: 400px; 
   transition: all 0.5s;
 }
 
@@ -59,4 +59,95 @@ main {
 .icon,
 .link_text {
   font-size: 20px;
+} */
+
+
+
+
+
+
+
+
+
+.nav {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Shorthand for padding */
+  color: white;
+}
+
+.nav h2 {
+  cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav i.bi{
+  font-size: 23px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav ul li {
+  cursor: pointer;
+}
+
+.sidebar-container {
+  background-color: black;
+  color: white;
+  width: 210px;
+  height: calc(100vh - 60px); /* Add spaces around the - operator */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar-container::-webkit-scrollbar{
+  display: none;
+}
+
+.nav-option {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 30px; /* Shorthand for padding */
+  gap: 20px;
+  width: 210px;
+  color: white; /* Set initial text color */
+  margin-bottom: 10px; /* Add margin-bottom to create space between options */
+}
+
+.nav-option:hover {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-option i.bi {
+  color: white; /* Adjust icon color to match the initial text color */
+  font-size: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .navCollapse{
+    width: 80px;
+  }
+  .navCollapse .nav-option h3{
+    display: none;
+  }
+  .navCollapse .nav-option{
+    padding: 28px;
+  }
 }
